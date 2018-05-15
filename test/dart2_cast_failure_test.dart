@@ -15,7 +15,7 @@ void main() {
     // "As" cast back to ChartData<TimeSeries>.
     expect(
       () => downcastTypeChart as ChartData<TimeSeries>(),
-      throwsA(anything),
+      returnsNormally,
     );
   });
 }
